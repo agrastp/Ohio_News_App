@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
-    <title>Ohioan Cinemas</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <title>ShowTIME</title>
 </head>
 <body>
-    <header>OHIOAN CINEMAS</header>
-    <div class="navigation">
-    <ul>
-        <li>
-            <a href="#trending">Trending</a>
-        </li>
-        <li>
-            <a href="#movie-theaters">Movie Theaters</a>
-        </li>
-        <li>
-            <a href="#review">Review</a>
-        </li>
-        <li>
-            <a href="#local-workshop">Local Workshop</a>
-        </li>
-    </ul>
-    </div>
-    <section class="content">
-        <div id="trending" class="trending"></div>
-        <h2>Trending</h2>
-        <div id="movie-theaters" class="movie-theaters"></div>
-        <h2>Movie Theaters</h2>
-        <div id="review" class="review"></div>
-        <h2>Review</h2>
-        <div id="local-workshop" class="local-workshop"></div>
-        <h2>Local workshop</h2>
+    <div>
+        <header class="title is-1">
+            <h1><span id="show">SHOW</span>time</h1>
+            <input class="input is-rounded" type="text" placeholder="Title of TV Show">
+        </header>
+            
+        </div>
+    <section class="rows is-large">
+        <div id="shows" class="row is-full">
+            <h2 class="subtitle">Find a Show</h2>
+
+        </div>
+       
+        <div id="watch-now" class="row is-full">
+            <h2 class="subtitle">Watch it Here</h2>
+            <p>Did you get a TV Show recommendation?  Look it up here to see where you can watch it?</p>
+       
+        </div>
+        
+        <div id="movie-links" class="row is-full">
+            <div>
+            <a src="" alt="Netflix icon"></a>
+            <a src="" alt="Disney Plus icon"></a>
+            <a src="" alt="Hulu icon"></a>
+            <a src="" alt="Amazon Prime icon"></a>
+            <a src="" alt="Apple TV icon"></a>
+            <a src="" alt="HBO icon"></a>
+            </div>
+        </div>
+        
     
  
     
     </section>
-    <small class="email">Subcribe with your email</small>
-    <input class="email" type="text">
+
+   
     <footer>
         <img>
     </footer>
-    <script src="/assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
