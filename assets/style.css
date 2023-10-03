@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
 
+div .title {
+    background-image: linear-gradient(to top, rgb(51, 47, 47), rgb(185, 85, 195));
+    margin: 10px;
+    padding: 45px;
+}
 
+header h1 {
+    color: rgb(61, 58, 58);
+    font-size: larger;
+    padding: 20px;
+    text-shadow: .5px .5px rgb(92, 91, 91);
+}
+#show{
+    color:rgb(20, 213, 220);
+    text-shadow: 2px 2px black;
+    font-size: larger;
+}
+
+header .input {
+    width: 20%;
+    float: right;
+}
+.row{
+    background-color: rgb(216, 212, 212);
+    margin: 20px;
+    padding: 20px;
+}
+
+section .subtitle{
+    font-size: 30px;
+  
+}
