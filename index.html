@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     <title>ShowTIME</title>
 </head>
+
 <body>
+
     <div>
-        <header class="title is-1">
+        <header id="title">
             <h1><span id="show">SHOW</span>time</h1>
-            <input class="input is-rounded" type="text" placeholder="Title of TV Show">
+            <nav class="navbar navbar-end">
+                <a href="#shows" class="navbar-item">Find a Show</a>
+                <a href="#watch-now" class="navbar-item">Watch it Here</a>
+                <a href="#search-history" class="navbar-item">Search History</a>
+                <a href="#movie-links" class="navbar-item">Links</a>
+            </nav>
         </header>
-            
-        </div>
+    </div>
+
     <section class="rows is-large">
+
         <div id="shows" class="row is-full">
             <h2 class="subtitle">Find a Show</h2>
-
+            <input class="input is-rounded" type="text" placeholder="Title of TV Show">
         </div>
-       
+
         <div id="watch-now" class="row is-full">
             <h2 class="subtitle">Watch it Here</h2>
-            <p>Did you get a TV Show recommendation?  Look it up here to see where you can watch it?</p>
-       
+            <p>Did you get a TV Show recommendation? Look it up here to see where you can watch it?</p>
         </div>
-        
+
+        <div id="search-history" class="row is-full">
+            <h2 class="subtitle">Search History</h2>
+        </div>
+
         <div id="movie-links" class="row is-full">
-            <div>
-            <a src="" alt="Netflix icon"></a>
-            <a src="" alt="Disney Plus icon"></a>
-            <a src="" alt="Hulu icon"></a>
-            <a src="" alt="Amazon Prime icon"></a>
-            <a src="" alt="Apple TV icon"></a>
-            <a src="" alt="HBO icon"></a>
+            <div class="rows">
+                <a href="https://www.netflix.com/" class="links row is-one-sixth"><img src="assets/images/netflix.png"
+                        alt="Netflix icon" width="150px" height="150px" /></a>
+                <a href="https://www.disneyplus.com/" class="links row is-one-sixth"><img src="assets/images/Disney.png"
+                        alt="Disney icon" width="150px" height="150px" /></a>
+                <a href="https://www.hulu.com/welcome" class="links row is-one-sixth"><img src="assets/images/Hulu.jpeg"
+                        alt="Hulu icon" width="150px" height="150px" /></a>
+                <a href="https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011"
+                    class="links row is-one-sixth"><img src="assets/images/Amazon.webp" alt="Amazon icon" width="150px"
+                        height="150px" /></a>
+                <a href="https://tv.apple.com/?mttn3pid=Google%20AdWords&mttnagencyid=a5e&mttncc=US&mttnsiteid=143238&mttnsubad=OUS2019801_1-662432492578-c&mttnsubkw=75222244984__idXQ476O_&mttnsubplmnt=0AAAAAC0Rhi2Eya6zJ_HB15MnXUsXU0uog"
+                    class="links row is-one-sixth"><img src="assets/images/appleTV.jpeg" alt="Apple icon" width="150px"
+                        height="150px" /></a>
+                <a href="https://www.max.com/?utm_id=sa%7c71700000109152733%7c58700008392270142%7cp76407894054&gclid=CjwKCAjw9-6oBhBaEiwAHv1QvNjEP0-2_OQcscvisytQ_crJBvO7WtvpEc1TMdIEBzZaKd3vTuFmGxoC0kMQAvD_BwE&gclsrc=aw.ds"
+                    alt="HBO icon" class="links row is-one-sixth"><img src="assets/images/HBO.png" alt="HBO icon"
+                        width="150px" height="150px" /></a>
             </div>
+
         </div>
-        
-    
- 
-    
     </section>
 
-   
+
     <footer>
-        <img>
+        <h2>Made by TZPJ</h2>
+        <p>
+            &copy; Trang, Zach, Pam, and Joe, Inc.
+        </p>
     </footer>
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
