@@ -14,7 +14,7 @@
     <div>
         <header id="title">
             <h1><span id="show">SHOW</span>time</h1>
-            <nav class="navbar navbar-end">
+            <nav class="navbar navbar-end" role= "navigation" aria-label="main navigation">
                 <a href="#shows" class="navbar-item">Find a Show</a>
                 <a href="#watch-now" class="navbar-item">Watch it Here</a>
                 <a href="#search-history" class="navbar-item">Search History</a>
@@ -27,8 +27,10 @@
 
         <div id="shows" class="row is-full">
             <h2 class="subtitle">Find a Show</h2>
-            <input id ="user-input" class="input is-rounded" type="text" placeholder="Title of TV Show">
-            <button class="search-btn">Search</button>
+            <input id="user-input" class="input is-rounded" type="text" placeholder="Title of TV Show">
+            <button id="search-btn">Search</button>
+            <div id="show-img"></div>
+            <div id="show-info"></div>
         </div>
 
         <div id="watch-now" class="row is-full">

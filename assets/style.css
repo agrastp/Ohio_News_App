@@ -3,9 +3,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html body{
-    background-color: rgb(249, 246, 246);
-}
+/* Header and Navbar Styling */
 
 header{
     background-image: linear-gradient(to top, rgb(51, 47, 47), rgb(185, 85, 195));
@@ -25,15 +23,25 @@ div header h1{
     font-size: 90px;
 }
 
-#shows .input {
-    width: 20%;
-
-}
-
 nav{ 
     width: 36%;
 }
 
+/* Input Textarea */
+
+#shows .input {
+    width: 20%;
+}
+
+#search-btn{
+    padding:8px;
+    margin-right: 20px;
+}
+/* Main Body Content */
+
+html body{
+    background-color: rgb(249, 246, 246);
+}
 
 .row{
     background-color: rgb(177, 174, 174);
@@ -43,8 +51,9 @@ nav{
 
 section .subtitle{
     font-size: 30px;
-  
 }
+
+/* Links Section */
 
 div .links{
     margin: 10px;
@@ -55,6 +64,8 @@ img {
     box-shadow: 2px 2px 4px whitesmoke;
 }
 
+/* Footer */
+
 footer {
     padding: 30px;
     clear: both;
@@ -64,3 +75,27 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+
+/* Styling for JavaScript entered into HTML */
+
+.card-styling{
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#show-img{
+    padding: 20px;
+    float:right;
+}
+
+.poster{
+    width: 200px;
+    height: 300px;
+}
+
+.button{
+    margin: 5px;
+}
+
