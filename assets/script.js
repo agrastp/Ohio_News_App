@@ -115,3 +115,4 @@ function localStorageContent() {
 }
 
 buttonEl.addEventListener('click', getTvMaze);
+
