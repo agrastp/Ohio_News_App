@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 titleInput = document.getElementById("user-input");
 
 function getTvMaze() {
+    
     var title = titleInput.value;
 
     if (!title) return;
@@ -73,6 +74,7 @@ function renderTvShowData(data) {
     var showImage = "<img src=" + showImageEl + ">";
     var showSummary = data.summary;
     var showNetwork = data.network.name;
+    var showIMDB = data.externals.imdb;
 
     var tvShowCard = document.createElement("p");
     tvShowCard.innerHTML = "<b>Title: </b>" + showTitle + "<br><b>Genre: </b>" + showGenre + "<br><b>Language: </b>" + showLanguage + "<br><b>Network: </b>" + showNetwork + "<br><b>Summary: </b>" + showSummary;
@@ -85,6 +87,48 @@ function renderTvShowData(data) {
     showImgCard.innerHTML = "";
     showImgCard.appendChild(showPoster);
     showPoster.setAttribute("class", "poster");
+
+    getWatchMode(showIMDB);
+}
+
+var watchMode_APIKEY = "KJUplR7UUN4HwTAUy0HmRPxwTK8uuFP8ou2cXD3L"
+
+function getWatchMode(showIMDB) {
+    var watchModeAPI = `https://api.watchmode.com/v1/title/${showIMDB}/details/?apiKey=${watchMode_APIKEY}&append_to_response=sources`
+
+    fetch(watchModeAPI)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        if (!data) {
+            return alert("No data for " + title);
+        }
+        watchModeData = data;
+        renderStreamingData(watchModeData);
+        console.log(watchModeData);
+    }).catch(function (error) {
+    });
+}
+   
+
+var watchModeCard = document.getElementById("show-data");
+
+function renderStreamingData(watchModeData) {
+    console.log(watchModeData);
+    var showNetworkOne = watchModeData.sources[0].name;
+    var showNetworkTwo = watchModeData.sources[2].name;
+    var showNetworkThree = watchModeData.sources[4].name;
+    var showNetworkFour = watchModeData.sources[6].name;
+    var showNetworkFive = watchModeData.sources[8].name;
+
+    var streamingCard = document.createElement("p");
+    streamingCard.innerHTML = "<b>1. </b>" + showNetworkOne + "<br><b>2. </b>" + showNetworkTwo + "<br><b>3. </b>" + showNetworkThree + "<br><b>4. </b>" + showNetworkFour + "<br><b>5. </b>" + showNetworkFive;
+    watchModeCard.innerHTML = "";
+    watchModeCard.appendChild(streamingCard);
+    streamingCard.setAttribute("class", "card-styling");
+
+
 }
 
 
