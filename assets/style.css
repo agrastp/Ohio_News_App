@@ -24,7 +24,12 @@ div header h1{
 }
 
 nav{ 
-    width: 36%;
+    width: 25%;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Input Textarea */
@@ -36,7 +41,15 @@ nav{
 #search-btn{
     padding:8px;
     margin-right: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
 }
+
+#search-btn:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Main Body Content */
 
 html body{
