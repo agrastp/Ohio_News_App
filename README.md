@@ -8,7 +8,7 @@ Open https://agrastp.github.io/SHOWtime_Website/ with your browser to load the w
 
 ## Visual
 Screenshot of the deployed application can be found below 
-<img src="/assets/images/screenshot.png" alt= 'Website main page titled "ShowTime" with navigation bar' title="ShowTime deployed application">
+<img src="/assets/images/screenshot.PNG" alt= 'Website main page titled "ShowTime" with navigation bar' title="ShowTime deployed application">
 
 ## License
 MIT 
