@@ -8,10 +8,10 @@ Open https://agrastp.github.io/SHOWtime_Website/ with your browser to load the w
 
 ## Visual
 Screenshot of the deployed application can be found below 
-<img src="C:\Users\trang\bootcamp\SHOWtime_Website\assets\images\Screenshot 2023-10-09 203149.png" alt= 'Website main page titled "ShowTime" with navigation bar' title="ShowTime deployed application">
+<img src="/assets/images/screenshot.png" alt= 'Website main page titled "ShowTime" with navigation bar' title="ShowTime deployed application">
 
 ## License
 MIT 
 
 ## Contribution 
-The authors are open to any contributions to the project code base. Please clone the repo with SSH keys at  
+The authors are open to any contributions to the project code base. Please clone the repo with your SSH key at git@github.com:agrastp/SHOWtime_Website.git and create a branch. After changes are made, please publish your branch and create a pull request.  
