@@ -1,5 +1,7 @@
 var buttonEl = document.getElementById("search-btn");
 
+//When websage is loaded, it gets local storage content and loads it onto the page
+
 document.addEventListener("DOMContentLoaded", () => {
     let localStorageContent = localStorage.getItem('showTitle');
     localStorageContent = JSON.parse(localStorageContent);
@@ -38,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
+// Sends a request from TVMaze for information on inputed titles of TV Shows
 titleInput = document.getElementById("user-input");
 
 function getTvMaze() {
@@ -57,12 +60,13 @@ function getTvMaze() {
             if (!data) {
                 return alert("No data for " + title);
             }
-            console.log(data);
+         
             renderTvShowData(data);
         }).catch(function (error) {
         });
 }
 
+// Uses data from TVMaze reponse to append select information onto the page.  Sends the IMBd information through to the WatchMode API function.
 var tvMazeCard = document.getElementById("show-info");
 var showImgCard = document.getElementById("show-img");
 
@@ -91,6 +95,7 @@ function renderTvShowData(data) {
     getWatchMode(showIMDB);
 }
 
+// WatchMode sends a request using a show title IMBd
 var watchMode_APIKEY = "KJUplR7UUN4HwTAUy0HmRPxwTK8uuFP8ou2cXD3L"
 
 function getWatchMode(showIMDB) {
@@ -106,16 +111,16 @@ function getWatchMode(showIMDB) {
         }
         watchModeData = data;
         renderStreamingData(watchModeData);
-        console.log(watchModeData);
+      
     }).catch(function (error) {
     });
 }
    
-
+// Once data is returned from Watchmode, it appends on the Watch Here card for top 5 streaming services
 var watchModeCard = document.getElementById("show-data");
 
 function renderStreamingData(watchModeData) {
-    console.log(watchModeData);
+  
     var showNetworkOne = watchModeData.sources[0].name;
     var showNetworkTwo = watchModeData.sources[2].name;
     var showNetworkThree = watchModeData.sources[4].name;
@@ -131,7 +136,7 @@ function renderStreamingData(watchModeData) {
 
 }
 
-
+// Titles searched with the getTVMaze function will be stored in local storage.  Buttons are added to page to easily access the show again.
 var pastSearch = document.querySelector("#search-history");
 function localStorageContent() {
 
